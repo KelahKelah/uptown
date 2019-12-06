@@ -5,27 +5,17 @@ import ImageThree from '../../assets/image/Work3.jpg';
 
 
 
-function Photo() {
+function PhotoThree() {
     return (
         <div>
-            <div className="row">
-                <div className="col-md-4"><img src={ImageOne} alt="image" width="100%" height="100%"/></div>
-                <div className="col-md-4"><img src={ImageTwo} alt="image" width="100%" height="100%"/></div>
-                <div className="col-md-4"><img src={ImageThree} alt="image" width="100%" height="100%"/></div>
-            </div>
-
-            
-            
-
-            {/* <div className="col-md-4">
-                <img src={ImageOne} alt="image" width="100%" />
-                <img src={ImageTwo} alt="image" width="100%" />
-                <img src={ImageThree} alt="image" width="100%" />
-            </div> */}
-
+            <Row>
+                <Col md={4}><img src={ImageOne} alt="image" width="100%" height="100%"/></Col>
+                <Col md={4}><img src={ImageTwo} alt="image" width="100%" height="100%"/></Col>
+                <Col md={4}><img src={ImageThree} alt="image" width="100%" height="100%"/></Col>
+            </Row>
 
         </div>
     )
 }
 
-export default Photo
+export default PhotoThree

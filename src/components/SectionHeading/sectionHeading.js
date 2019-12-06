@@ -1,4 +1,5 @@
 import React from "react";
+import { Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 
@@ -6,15 +7,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 function Heading ({heading, textheading}) {
     return(
-        <div className="col-md-12 justify-content-center">
+        <Col md={12} className="justify-content-center">
 
-            <div className="col-md-12 heading-section text-center ftco-animate mb-5" >
+            <Col md={12} className="heading-section text-center ftco-animate mb-5" >
                 <span className="subheading">{heading}</span>
                 <h2 className="mb-2">{textheading}</h2>
-            </div>
+            </Col>
 
 
-        </div>
+        </Col>
     )
 
 }
